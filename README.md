@@ -60,6 +60,9 @@ Para desfrutar da experiência do Flor&Cultura, siga os passos abaixo:
 Certifique-se de que o seguinte requisito esteja instalado em sua máquina:
 
 - **JDK**: É necessário ter instalado um JDK (Java Development Kit) a partir da versão 17.
+- **SqlIte**: O banco de dados está incluído no próprio arquivo JAR do projeto. Caso haja problemas de funcionamento, você pode configurar utilizando o arquivo SQL disponível em codigo/banco/bd.sql
+
+Se precisar adicionar dados de exemplo ao banco de dados, você pode usar o script InsertRandomData localizado na pasta conexcaoDoBanco.
 
 Após seguir esses passos, você estará pronto para explorar o Flor&Cultura e todas as suas funcionalidades encantadoras.
 
