@@ -1,4 +1,8 @@
 # Flor&Cultura
+### Descrição do Projeto
+
+O projeto consiste em um e-commerce de uma floricultura onde o usuário faz login, seleciona produtos de interesse, adiciona ao carrinho de compras com a quantidade desejada, e finaliza a compra escolhendo a forma de pagamento. A interface de usuário está localizada na pasta `view`, enquanto a lógica de negócio e objetos estão na pasta `main`.
+
 ## Como Executar o Projeto e-Commerce
 
 Para executar o projeto, siga os passos abaixo:
@@ -27,9 +31,6 @@ Para executar o projeto, siga os passos abaixo:
 2. **Configurar o Artefato:**
    - Siga os passos acima a partir do item 2 para configurar o artefato e localizar o arquivo `ecommerce.jar`.
 
-### Descrição do Projeto
-
-O projeto consiste em um e-commerce de uma floricultura onde o usuário faz login, seleciona produtos de interesse, adiciona ao carrinho de compras com a quantidade desejada, e finaliza a compra escolhendo a forma de pagamento. A interface de usuário está localizada na pasta `view`, enquanto a lógica de negócio e objetos estão na pasta `main`.
 
 ### Requisitos
 
