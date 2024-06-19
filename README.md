@@ -43,16 +43,26 @@ Após seguir esses passos, você estará pronto para explorar o Flor&Cultura e t
 
 Aqui estão algumas capturas de tela do sistema que capturam a beleza e a simplicidade do Flor&Cultura:
 
-1. **Tela de Login:**
-   ![Tela de Login](imagens/tela_login.png)
+ **Tela de Login:**
 
-2. **Seleção de Produtos:**
-   ![Seleção de Produtos](imagens/selecao_produtos.png)
+   <img src="https://github.com/gu1334/Trabalho-final-de-LP-POO/blob/main/login.png" style="width:500px;"/>
+   
 
-3. **Carrinho de Compras:**
-   ![Carrinho de Compras](imagens/carrinho_compras.png)
+ **Seleção de Produtos:**
 
-4. **Forma de Pagamento:**
-   ![Forma de Pagamento](imagens/forma_pagamento.png)
+   <img src="https://github.com/gu1334/Trabalho-final-de-LP-POO/blob/main/principal.png" style="width:500px;"/>
+
+
+ **Carrinho de Compras:**
+ 
+   <img src="https://github.com/gu1334/Trabalho-final-de-LP-POO/blob/main/carrinho.png" style="width:500px;"/>
+
+
+ **Forma de Pagamento:**
+
+   <img src="https://github.com/gu1334/Trabalho-final-de-LP-POO/blob/main/pagamento.png" style="width:500px;"/>
+
+
+
 
 Prepare-se para uma jornada floral extraordinária com o Flor&Cultura! 🌸🌿
