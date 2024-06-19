@@ -3,6 +3,30 @@
 
 Bem-vindo ao Flor&Cultura, um e-commerce encantador dedicado aos amantes de flores. Aqui, os usuários podem explorar uma variedade de produtos florais, personalizar suas compras e concluir suas transações de maneira simples e elegante. A interface de usuário está localizada na pasta `view`, enquanto a lógica de negócios e objetos essenciais residem na pasta `main`.
 
+### Imagens do Sistema
+
+Aqui estão algumas capturas de tela do sistema que capturam a beleza e a simplicidade do Flor&Cultura:
+
+ **Tela de Login:**
+
+   <img src="https://github.com/gu1334/Trabalho-final-de-LP-POO/blob/main/login.png" style="width:500px;"/>
+   
+
+ **Seleção de Produtos:**
+
+   <img src="https://github.com/gu1334/Trabalho-final-de-LP-POO/blob/main/principal.png" style="width:500px;"/>
+
+
+ **Carrinho de Compras:**
+ 
+   <img src="https://github.com/gu1334/Trabalho-final-de-LP-POO/blob/main/carrinho.png" style="width:500px;"/>
+
+
+ **Forma de Pagamento:**
+
+   <img src="https://github.com/gu1334/Trabalho-final-de-LP-POO/blob/main/pagamento.png" style="width:500px;"/>
+
+
 ## Como Executar o Projeto Flor&Cultura
 
 Para desfrutar da experiência do Flor&Cultura, siga os passos abaixo:
@@ -38,31 +62,5 @@ Certifique-se de que o seguinte requisito esteja instalado em sua máquina:
 - **JDK**: É necessário ter instalado um JDK (Java Development Kit) a partir da versão 17.
 
 Após seguir esses passos, você estará pronto para explorar o Flor&Cultura e todas as suas funcionalidades encantadoras.
-
-### Imagens do Sistema
-
-Aqui estão algumas capturas de tela do sistema que capturam a beleza e a simplicidade do Flor&Cultura:
-
- **Tela de Login:**
-
-   <img src="https://github.com/gu1334/Trabalho-final-de-LP-POO/blob/main/login.png" style="width:500px;"/>
-   
-
- **Seleção de Produtos:**
-
-   <img src="https://github.com/gu1334/Trabalho-final-de-LP-POO/blob/main/principal.png" style="width:500px;"/>
-
-
- **Carrinho de Compras:**
- 
-   <img src="https://github.com/gu1334/Trabalho-final-de-LP-POO/blob/main/carrinho.png" style="width:500px;"/>
-
-
- **Forma de Pagamento:**
-
-   <img src="https://github.com/gu1334/Trabalho-final-de-LP-POO/blob/main/pagamento.png" style="width:500px;"/>
-
-
-
 
 Prepare-se para uma jornada floral extraordinária com o Flor&Cultura! 🌸🌿
