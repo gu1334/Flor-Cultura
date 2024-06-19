@@ -39,3 +39,19 @@ Certifique-se de que o seguinte requisito esteja instalado em sua máquina:
 - **JDK**: É necessário ter instalado um JDK (Java Development Kit) a partir da versão 17.
 
 Após seguir esses passos, o projeto deverá ser executado corretamente no IntelliJ IDEA.
+
+### Imagens do Sistema
+
+A seguir estão alguns prints de tela do sistema:
+
+1. Tela de Login:
+   ![Tela de Login](imagens/tela_login.png)
+
+2. Seleção de Produtos:
+   ![Seleção de Produtos](imagens/selecao_produtos.png)
+
+3. Carrinho de Compras:
+   ![Carrinho de Compras](imagens/carrinho_compras.png)
+
+4. Forma de Pagamento:
+   ![Forma de Pagamento](imagens/forma_pagamento.png)
