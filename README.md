@@ -31,6 +31,9 @@ Aqui estão algumas capturas de tela do sistema que capturam a beleza e a simpli
 
 Para desfrutar da experiência do Flor&Cultura, siga os passos abaixo:
 
+1. Clone o repositório para o seu ambiente local:
+   `https://github.com/gu1334/Trabalho-final-de-LP-POO.git`
+
 ### Executando o Projeto via IntelliJ IDEA
 
 1. **Abrir o Projeto:**
@@ -63,6 +66,9 @@ Certifique-se de que o seguinte requisito esteja instalado em sua máquina:
 - **SqlIte**: O banco de dados está incluído no próprio arquivo JAR do projeto. Caso haja problemas de funcionamento, você pode configurar utilizando o arquivo SQL disponível em codigo/banco/bd.sql
 
 Se precisar adicionar dados de exemplo ao banco de dados, você pode usar o script InsertRandomData localizado na pasta conexcaoDoBanco.
+
+### Drawn
+O Drawn.io esta dentro da pasta Drwan do repositorio
 
 Após seguir esses passos, você estará pronto para explorar o Flor&Cultura e todas as suas funcionalidades encantadoras.
 
