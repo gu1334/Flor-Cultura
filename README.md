@@ -31,6 +31,9 @@ Aqui estão algumas capturas de tela do sistema que capturam a beleza e a simpli
 
 Para desfrutar da experiência do Flor&Cultura, siga os passos abaixo:
 
+Usuario: Newton
+Senha: Newton123
+
 1. Clone o repositório para o seu ambiente local:
    `https://github.com/gu1334/Trabalho-final-de-LP-POO.git`
 
