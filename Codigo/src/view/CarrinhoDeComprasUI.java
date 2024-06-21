@@ -41,7 +41,7 @@ public class CarrinhoDeComprasUI extends JFrame {
 
         JButton finalizarCompraButton = new JButton("Finalizar Compra");
         finalizarCompraButton.setAlignmentX(Component.CENTER_ALIGNMENT);
-        finalizarCompraButton.addActionListener(this::finalizarCompra);
+        finalizarCompraButton.addActionListener(this::finalizarCompra); // Adiciona ActionListener ao botão
         produtosPanel.add(finalizarCompraButton);
 
         setLocationRelativeTo(null);
@@ -117,17 +117,8 @@ public class CarrinhoDeComprasUI extends JFrame {
     }
 
     private void finalizarCompra(ActionEvent e) {
-        double valorTotal = carrinho.calcularValorTotal();
-        JOptionPane.showMessageDialog(this, String.format("Compra finalizada! Valor total: R$ %.2f", valorTotal));
-        carrinho.limparCarrinho();
-        produtosPanel.removeAll();
-        produtosPanel.revalidate();
-        produtosPanel.repaint();
-        atualizarValorTotal();
-
-        new FinalizarPagamentoUI(carrinho).setVisible(true);
-
-        dispose();
+        new FinalizarPagamentoUI(carrinho).setVisible(true); // Inicia a interface de finalizar pagamento
+        dispose(); // Fecha a janela atual do carrinho de compras
     }
 
     public void adicionarProduto(Produtos produto) {
@@ -141,12 +132,24 @@ public class CarrinhoDeComprasUI extends JFrame {
         pack();
     }
 
+    // Exemplo simplificado de como adicionar produtos ao carrinho de compras
     public static void main(String[] args) {
         SwingUtilities.invokeLater(() -> {
-            Produtos p1 = new Produtos(1, "Rosa", 10.0, "Flores", 5);
-            Produtos p2 = new Produtos(2, "Orquídea", 20.0, "Flores", 3);
+            CarrinhoDeCompras carrinho = new CarrinhoDeCompras();
 
-            CarrinhoDeComprasUI frame = new CarrinhoDeComprasUI(List.of(p1, p2));
+            // Simulação de adição de produtos recuperados do banco de dados
+            Produtos p1 = new Produtos(1, "Rosa", 10.0, "Flores", 5);
+            Produtos p2 = new Produtos(2, "Orquídea", 10.0, "Flores", 3);
+
+            carrinho.adicionarProduto(p1);
+            carrinho.adicionarProduto(p2);
+
+            // Teste para verificar o cálculo do valor total
+            double valorTotal = carrinho.calcularValorTotal();
+            System.out.println("Valor Total do Carrinho: R$ " + valorTotal);
+
+            // Exemplo de inicialização da interface CarrinhoDeComprasUI
+            new CarrinhoDeComprasUI(List.of(p1, p2));
         });
     }
 }

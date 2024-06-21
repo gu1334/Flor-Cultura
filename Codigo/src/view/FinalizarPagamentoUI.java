@@ -5,6 +5,7 @@ import Main.FormaDePagamento;
 import Main.Dinheiro;
 import Main.Pix;
 import Main.CartaoDeCredito;
+import Main.Produtos;
 
 import javax.swing.*;
 import java.awt.*;
@@ -30,19 +31,22 @@ public class FinalizarPagamentoUI extends JFrame {
         mainPanel.setLayout(new BoxLayout(mainPanel, BoxLayout.Y_AXIS));
         getContentPane().add(mainPanel);
 
-        valorTotalLabel = new JLabel("Valor Total: R$ " + carrinho.calcularValorTotal());
-        valorTotalLabel.setAlignmentX(Component.CENTER_ALIGNMENT);
-        mainPanel.add(valorTotalLabel);
-
+        // Adiciona o ComboBox de formas de pagamento
         mainPanel.add(Box.createRigidArea(new Dimension(0, 20)));
         String[] formasPagamento = {"Dinheiro", "Pix", "Cartão de Crédito"};
         formaPagamentoComboBox = new JComboBox<>(formasPagamento);
         formaPagamentoComboBox.setAlignmentX(Component.CENTER_ALIGNMENT);
-
         formaPagamentoComboBox.setMinimumSize(new Dimension(150, formaPagamentoComboBox.getPreferredSize().height));
-
         mainPanel.add(formaPagamentoComboBox);
 
+        // Adiciona o label do valor total
+        mainPanel.add(Box.createRigidArea(new Dimension(0, 20)));
+        valorTotalLabel = new JLabel();
+        valorTotalLabel.setFont(new Font("Arial", Font.BOLD, 16));
+        valorTotalLabel.setAlignmentX(Component.CENTER_ALIGNMENT);
+        mainPanel.add(valorTotalLabel);
+
+        // Adiciona o botão de finalizar compra
         mainPanel.add(Box.createRigidArea(new Dimension(0, 20)));
         JButton finalizarCompraButton = new JButton("Finalizar Compra");
         finalizarCompraButton.setAlignmentX(Component.CENTER_ALIGNMENT);
@@ -50,6 +54,13 @@ public class FinalizarPagamentoUI extends JFrame {
         mainPanel.add(finalizarCompraButton);
 
         setLocationRelativeTo(null);
+        atualizarValorTotal(); // Atualiza o valor total inicialmente
+    }
+
+    private void atualizarValorTotal() {
+        double valorTotal = carrinho.calcularValorTotal();
+        valorTotalLabel.setText("Valor Total: R$ " + String.format("%.2f", valorTotal));
+        getContentPane().revalidate(); // Revalida o conteúdo para garantir que seja exibido corretamente
     }
 
     private void finalizarCompra(ActionEvent e) {
@@ -72,6 +83,7 @@ public class FinalizarPagamentoUI extends JFrame {
         }
 
         carrinho.finalizarCompra(formaDePagamento);
+        atualizarValorTotal(); // Atualiza o valor total após finalizar a compra
 
         if (formaDePagamento instanceof Pix) {
             String chavePix = ((Pix) formaDePagamento).getChavePix();
@@ -83,9 +95,14 @@ public class FinalizarPagamentoUI extends JFrame {
         dispose();
     }
 
+
     public static void main(String[] args) {
         SwingUtilities.invokeLater(() -> {
             CarrinhoDeCompras carrinho = new CarrinhoDeCompras();
+            // Adicione produtos ao carrinho para teste
+            carrinho.adicionarProduto(new Produtos(1, "Rosa", 10.0, "Flores", 5));
+            carrinho.adicionarProduto(new Produtos(2, "Orquídea", 20.0, "Flores", 3));
+
             FinalizarPagamentoUI frame = new FinalizarPagamentoUI(carrinho);
             frame.setVisible(true);
         });
